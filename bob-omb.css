@@ -1,0 +1,150 @@
+#game-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin-top: 16px;
+    border: 2px solid #613c3c;
+    border-radius: 10px;
+    background-color: rgb(58, 27, 0);
+}
+
+#board {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#gameOverText {
+    font-family: Arial;
+    font-size: 35px;
+    font-weight: bold;
+    color: purple;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+#playAgainButton {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 115, 0);
+    cursor: pointer;
+    border: 2px solid rgb(255, 115, 0);
+    border-radius: 8px;
+    padding: 5px 12px;
+    font-size: 20px;
+    background: none;
+    z-index: 2;
+}
+
+#startButton {
+    color: rgb(255, 115, 0);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border: none;
+    font-size: 50px;
+    background: none;
+    z-index: 2;
+}
+
+:root {
+    --primary-color: #303030;
+    --secondary-color: #3d3d3d;
+    --tertiary-color: #f36a6a;
+    --background-color: #c6faae49;
+    --accent-color: #ffd787;
+    --footer-color: #bef0cd;
+    --sidebar-color: #bfa1ff;
+    --link-color: #ffffff;
+    --canvas-height: 60vh;
+    --canvas-width: 90vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    font-family: "Lexend", sans-serif;
+}
+
+#all-container {
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+} 
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: var(--sidebar-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 1.5em;
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+
+    transition: all 250ms ease;
+    background: var(--link-color);
+    padding: 0.25em 0.75em;
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+}
+
+nav ul li a:hover {
+    transition: all 250ms ease;
+    border: 2px solid var(--primary-color);
+    box-shadow: 3px 3px 0px var(--primary-color);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: var(--footer-color);
+    color: var(--secondary-color);
+
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+}
